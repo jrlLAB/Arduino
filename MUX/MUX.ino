@@ -259,6 +259,56 @@ void writeIDA(String input) {
     digitalWrite(5, HIGH);
     digitalWrite(13, HIGH);
     Serial.println("Changed to Electrode 8");
+  } else if (n == 20) {
+    digitalWrite(5, LOW);
+    digitalWrite(6, LOW);
+    digitalWrite(7, LOW);
+    digitalWrite(8, LOW);
+    digitalWrite(9, LOW);
+    digitalWrite(10, LOW);
+    digitalWrite(11, LOW);
+    digitalWrite(12, LOW);
+    digitalWrite(13, LOW);
+    digitalWrite(5, HIGH);
+    digitalWrite(10, HIGH);
+    digitalWrite(11, HIGH);
+    digitalWrite(12, HIGH);
+    digitalWrite(13, HIGH);
+    Serial.println("All collector electrodes on WE1");
+  } else if (n == 30) {
+    digitalWrite(5, LOW);
+    digitalWrite(6, LOW);
+    digitalWrite(7, LOW);
+    digitalWrite(8, LOW);
+    digitalWrite(9, LOW);
+    digitalWrite(10, LOW);
+    digitalWrite(11, LOW);
+    digitalWrite(12, LOW);
+    digitalWrite(13, LOW);
+    digitalWrite(6, HIGH);
+    digitalWrite(7, HIGH);
+    digitalWrite(8, HIGH);
+    digitalWrite(9, HIGH);
+    Serial.println("All generator electrodes on WE1");
+  } else if (n == 40) {
+    digitalWrite(5, LOW);
+    digitalWrite(6, LOW);
+    digitalWrite(7, LOW);
+    digitalWrite(8, LOW);
+    digitalWrite(9, LOW);
+    digitalWrite(10, LOW);
+    digitalWrite(11, LOW);
+    digitalWrite(12, LOW);
+    digitalWrite(13, LOW);
+    digitalWrite(6, HIGH);
+    digitalWrite(7, HIGH);
+    digitalWrite(8, HIGH);
+    digitalWrite(9, HIGH);
+    digitalWrite(10, HIGH);
+    digitalWrite(11, HIGH);
+    digitalWrite(12, HIGH);
+    digitalWrite(13, HIGH);
+    Serial.println("All generator/collector electrodes on WE1/WE2");
   }
   
 }
